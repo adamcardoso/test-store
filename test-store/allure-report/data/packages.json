@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "org.teststore.test",
+    "children" : [ {
+      "name" : "validarLoginComDadosValidos",
+      "uid" : "b05ee16d9edd37c5",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707533115285,
+        "stop" : 1707533125836,
+        "duration" : 10551
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invalidarLoginComDadosInvalidos",
+      "uid" : "674fb12fd842623f",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707533125900,
+        "stop" : 1707533135433,
+        "duration" : 9533
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "validarLoginDadosValidos",
+      "uid" : "5cc62f3d9e0025d",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "broken",
+      "time" : {
+        "start" : 1707533135444,
+        "stop" : 1707533155472,
+        "duration" : 20028
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "org.teststore.test"
+  } ]
+}

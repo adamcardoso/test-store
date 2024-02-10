@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Fri Feb 09 23:45:25 BRT 2024","Fri Feb 09 23:45:35 BRT 2024","9533","","org.teststore.test.LoginTest","","org.teststore.test.LoginTest","invalidarLoginComDadosInvalidos","invalidarLoginComDadosInvalidos",""
+"passed","Fri Feb 09 23:45:15 BRT 2024","Fri Feb 09 23:45:25 BRT 2024","10551","","org.teststore.test.LoginTest","","org.teststore.test.LoginTest","validarLoginComDadosValidos","validarLoginComDadosValidos",""
+"broken","Fri Feb 09 23:45:35 BRT 2024","Fri Feb 09 23:45:55 BRT 2024","20028","","org.teststore.test.RegisterTest","","org.teststore.test.RegisterTest","validarLoginDadosValidos","validarLoginDadosValidos",""
