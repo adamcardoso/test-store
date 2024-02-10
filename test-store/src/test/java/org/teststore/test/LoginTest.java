@@ -28,22 +28,24 @@ public class LoginTest extends BaseTest {
         LoginDTO usu = loginData.loginDadosValidos();
         String msg = authenticationPage.fazerLogin(usu.getEmail(), usu.getSenha());
 
+        homePage.clicarNoBtnLogout();
+
         Assert.assertEquals("Your account", msg);
     }
 
     @Test
-    @Description("Invalidar login com dados inválidos")
+    @Description("Invalidar login com email não cadastrado")
     @Story("Autenticação de usuário")
-    @Step("Executando login com dados inválidos")
+    @Step("Executando login com email não cadastrado")
     @Severity(SeverityLevel.NORMAL)
-    public void invalidarLoginComDadosInvalidos() {
+    public void invalidarLoginComEmailNaoCadastrado() {
         homePage.clicarNoBtnSignin();
         String msgTelaLogin = authenticationPage.verificarMensagemNaPaginaDeLogin();
 
         Assert.assertEquals("Log in to your account", msgTelaLogin);
 
         LoginDTO usu = loginData.loginDadoDinamicos();
-        String msg = authenticationPage.loginEmailIncorreto(usu.getEmail(), usu.getSenha());
+        String msg = authenticationPage.loginEmailNaoCadastrado(usu.getEmail(), usu.getSenha());
 
         Assert.assertEquals("Authentication failed.", msg);
     }
