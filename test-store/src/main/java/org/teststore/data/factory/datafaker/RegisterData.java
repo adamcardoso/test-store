@@ -5,14 +5,25 @@ import org.teststore.util.DataFakerGenerator;
 
 public class RegisterData {
     private DataFakerGenerator dataFakerGenerator = new DataFakerGenerator();
+    RegisterDTO registerDTO = new RegisterDTO();
 
-    public RegisterDTO cadastroDadoDinamicos(){
-        RegisterDTO registerDTO = new RegisterDTO();
-        registerDTO.setTitle(dataFakerGenerator.titulo());
+    public RegisterDTO cadastroDeUsuarioComDadosValidos(){
+        registerDTO.setTitle(dataFakerGenerator.generoFaker());
         registerDTO.setFirstName(dataFakerGenerator.primeiroNome());
         registerDTO.setLastName(dataFakerGenerator.sobrenome());
         registerDTO.setEmail(dataFakerGenerator.emailFaker());
         registerDTO.setPassword(dataFakerGenerator.senhaFaker());
+        registerDTO.setBirthdate(dataFakerGenerator.nascimento());
+
+        return registerDTO;
+    }
+
+    public RegisterDTO tentativaDeCadastroDeUsuarioComDadosInalidos(){
+        registerDTO.setTitle(dataFakerGenerator.generoFaker());
+        registerDTO.setFirstName(dataFakerGenerator.primeiroNome());
+        registerDTO.setLastName(dataFakerGenerator.sobrenome());
+        registerDTO.setEmail(dataFakerGenerator.emailFaker());
+        registerDTO.setPassword("11");
         registerDTO.setBirthdate(dataFakerGenerator.nascimento());
 
         return registerDTO;

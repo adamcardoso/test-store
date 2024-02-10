@@ -1,0 +1,75 @@
+{
+  "uid" : "674fb12fd842623f",
+  "name" : "invalidarLoginComDadosInvalidos",
+  "fullName" : "org.teststore.test.LoginTest.invalidarLoginComDadosInvalidos",
+  "historyId" : "24b2cf7c2e879c0837b13216cd66b6f2",
+  "time" : {
+    "start" : 1707533125900,
+    "stop" : 1707533135433,
+    "duration" : 9533
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.teststore.test"
+  }, {
+    "name" : "testClass",
+    "value" : "org.teststore.test.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "invalidarLoginComDadosInvalidos"
+  }, {
+    "name" : "suite",
+    "value" : "org.teststore.test.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9OJ40BU"
+  }, {
+    "name" : "thread",
+    "value" : "18416@DESKTOP-9OJ40BU.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "7bb383dccf9ce029",
+        "status" : "passed",
+        "time" : {
+          "start" : 1707533021007,
+          "stop" : 1707533030561,
+          "duration" : 9554
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "674fb12fd842623f.json",
+  "parameterValues" : [ ]
+}

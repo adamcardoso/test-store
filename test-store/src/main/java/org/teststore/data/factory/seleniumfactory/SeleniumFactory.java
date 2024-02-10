@@ -9,13 +9,14 @@ import java.util.Objects;
 public class SeleniumFactory {
     public static WebDriver driver;
     public static WebDriverWait wait;
+    protected static final int tempoDeEspera = 20;
 
-    public static void initBrowser(String url) {
+    public static void abrirNavegador(String url) {
         String caminhoDriver = "drivers/chromedriver.exe";
         System.setProperty("webdriver.chrome.driver", caminhoDriver);
 
         driver = new ChromeDriver();
-        wait = new WebDriverWait(driver, 40);
+        wait = new WebDriverWait(driver, tempoDeEspera);
 
         driver.get(url);
         driver.manage().window().maximize();

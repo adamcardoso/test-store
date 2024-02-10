@@ -8,9 +8,8 @@ import java.time.ZoneId;
 public class DataFakerGenerator {
     private static final Faker faker = new Faker();
 
-    public String titulo(){
-        String[] titulos = {"Mr.", "Mrs."};
-        return titulos[faker.random().nextInt(titulos.length)];
+    public Integer generoFaker() {
+        return faker.bool().bool() ? 1 : 2;
     }
 
     public String primeiroNome(){

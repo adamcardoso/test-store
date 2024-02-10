@@ -7,8 +7,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class RegisterPage extends BasePage{
-
-    private static final By btnSignin = By.cssSelector("#_desktop_user_info > div > a > span");
     private static final By btnCadastrar = By.cssSelector("[data-link-action='display-register-form']");
     private static final By btnSave = By.cssSelector("#customer-form > footer > button");
     private static final By msgTelaLogin = By.cssSelector("#main > header > h1");
@@ -18,15 +16,19 @@ public class RegisterPage extends BasePage{
     private static final By campoEmail = By.cssSelector("section input[name='email']");
     private static final By campoSenha = By.cssSelector("input[name='password']");
     private static final By campoNascimento = By.cssSelector("input[name='birthday']");
-    private static final By campoGeneroMasculino = By.cssSelector("#customer-form > section > div:nth-child(1) > div.col-md-6.form-control-valign > label:nth-child(1) > span > input[type=radio]");
-    private static final By campoGeneroFeminino = By.cssSelector("#customer-form > section > div:nth-child(1) > div.col-md-6.form-control-valign > label:nth-child(2) > span > input[type=radio]");
-
-    public void clicarNoBtnSignin() {
-        clicar(btnSignin);
-    }
+    private static final By btnRegisterForOffers = By.cssSelector("input[name='optin']");
+    private static final By btnRegisterForNewsLetters = By.cssSelector("input[name='newsletter']");
+    private static final By btnTermsAndConditions = By.cssSelector("input[name='psgdpr']");
+    private static final By msgSenhaDeveTerMaisQueCincoCampos = By.cssSelector("input[name='password'][title='At least 5 characters long']");
+    public static final By btnTituloMr = By.cssSelector("label.radio-inline:nth-child(1) > span.custom-radio > input[name='id_gender']");
+    public static final By btnTituloMrs = By.cssSelector("label.radio-inline:nth-child(2) > span.custom-radio > input[name='id_gender']");
 
     public String verificarMensagemNaPaginaDeLogin() {
         return lerTexto(msgTelaLogin);
+    }
+
+    public String verificarMensagemDeSenhaMenorQueCincoCampos() {
+        return lerTexto(msgSenhaDeveTerMaisQueCincoCampos);
     }
 
     public String verificarMensagemNaPaginaDeCadastro() {
@@ -37,18 +39,19 @@ public class RegisterPage extends BasePage{
         clicar(btnCadastrar);
     }
 
-    public void selecionarGenero(String genero) {
-        if (genero.equals("Mr.")) {
-            selecionarRadioBtn(By.id(campoGeneroMasculino));
-        } else if (genero.equals("Mrs.")) {
-            selecionarRadioBtn(By.id(campoGeneroFeminino));
+    private By inputTitle(int child) {
+        if (child == 1) {
+            return btnTituloMr;
+        } else if (child == 2) {
+            return btnTituloMrs;
         } else {
-            throw new IllegalArgumentException("Gênero inválido: " + genero);
+            // Se o valor do child não corresponder a nenhum dos casos acima, lançar uma exceção
+            throw new IllegalArgumentException("Valor inválido para o parâmetro child: " + child);
         }
     }
 
-    public String fazerCadastro(RegisterDTO registerDTO) {
-        selecionarGenero(registerDTO.getTitle());
+    public void fazerCadastro(RegisterDTO registerDTO) {
+        clicar(inputTitle(registerDTO.getTitle()));
         preencherInput(campoPrimeiroNome, registerDTO.getFirstName());
         preencherInput(campoSobrenome, registerDTO.getLastName());
         preencherInput(campoEmail, registerDTO.getEmail());
@@ -57,11 +60,13 @@ public class RegisterPage extends BasePage{
         // Formatar a data para o formato desejado
         LocalDate birthdate = registerDTO.getBirthdate();
         String formattedDate = birthdate.format(DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-
         preencherInput(campoNascimento, formattedDate);
 
-        clicar(btnSave);
+        clicar(btnRegisterForOffers);
+        clicar(btnRegisterForNewsLetters);
+        clicar(btnTermsAndConditions);
 
-        return lerTexto(msgTelaDeCadastro);
+        clicar(btnSave);
     }
+
 }

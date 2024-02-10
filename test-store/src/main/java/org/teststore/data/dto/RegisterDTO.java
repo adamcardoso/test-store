@@ -8,7 +8,7 @@ import java.time.LocalDate;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class RegisterDTO {
-    private String title;
+    private Integer title;
     private String firstName;
     private String lastName;
     private String email;

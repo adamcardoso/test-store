@@ -1,0 +1,31 @@
+[ {
+  "uid" : "674fb12fd842623f",
+  "name" : "invalidarLoginComDadosInvalidos",
+  "time" : {
+    "start" : 1707533125900,
+    "stop" : 1707533135433,
+    "duration" : 9533
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b05ee16d9edd37c5",
+  "name" : "validarLoginComDadosValidos",
+  "time" : {
+    "start" : 1707533115285,
+    "stop" : 1707533125836,
+    "duration" : 10551
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5cc62f3d9e0025d",
+  "name" : "validarLoginDadosValidos",
+  "time" : {
+    "start" : 1707533135444,
+    "stop" : 1707533155472,
+    "duration" : 20028
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

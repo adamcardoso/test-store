@@ -1,0 +1,85 @@
+{
+  "ec5b166a43cf21ffa8795f9db204fd49" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "b05ee16d9edd37c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707533115285,
+        "stop" : 1707533125836,
+        "duration" : 10551
+      }
+    }, {
+      "uid" : "2832053032e8a669",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707533010367,
+        "stop" : 1707533020933,
+        "duration" : 10566
+      }
+    } ]
+  },
+  "24b2cf7c2e879c0837b13216cd66b6f2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "674fb12fd842623f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707533125900,
+        "stop" : 1707533135433,
+        "duration" : 9533
+      }
+    }, {
+      "uid" : "7bb383dccf9ce029",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707533021007,
+        "stop" : 1707533030561,
+        "duration" : 9554
+      }
+    } ]
+  },
+  "aef723cb337ff2733148496277a96fdb" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 2,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 2
+    },
+    "items" : [ {
+      "uid" : "5cc62f3d9e0025d",
+      "status" : "broken",
+      "statusDetails" : "Timed out waiting for driver server to start.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-9OJ40BU', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_402'\nDriver info: driver.version: ChromeDriver",
+      "time" : {
+        "start" : 1707533135444,
+        "stop" : 1707533155472,
+        "duration" : 20028
+      }
+    }, {
+      "uid" : "4c5537b29b4a6e2b",
+      "status" : "broken",
+      "statusDetails" : "Timed out waiting for driver server to start.\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'DESKTOP-9OJ40BU', ip: '192.168.1.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_402'\nDriver info: driver.version: ChromeDriver",
+      "time" : {
+        "start" : 1707533030570,
+        "stop" : 1707533050609,
+        "duration" : 20039
+      }
+    } ]
+  }
+}
