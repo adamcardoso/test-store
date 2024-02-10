@@ -11,15 +11,25 @@ public class LoginTest extends BaseTest {
     LoginData loginData = new LoginData();
 
     @Test
-    public void validarLoginDadosValidos(){
+    public void validarLoginDadosValidos() {
+        loginPage.clicarNoBtnSignin();
+        String msgTelaLogin = loginPage.verificarMensagemNaPaginaDeLogin();
+
+        Assert.assertEquals("Log in to your account", msgTelaLogin);
+
         LoginDTO usu = loginData.loginDadosValidos();
         String msg = loginPage.fazerLogin(usu.getEmail(), usu.getSenha());
 
-        Assert.assertEquals("POPULAR PRODUCTS", msg);
+        Assert.assertEquals("Your account", msg);
     }
 
     @Test
-    public void validarLoginDadosInvalidos(){
+    public void validarLoginDadosInvalidos() {
+        loginPage.clicarNoBtnSignin();
+        String msgTelaLogin = loginPage.verificarMensagemNaPaginaDeLogin();
+
+        Assert.assertEquals("Log in to your account", msgTelaLogin);
+
         LoginDTO usu = loginData.loginDadoDinamicos();
         String msg = loginPage.loginEmailIncorreto(usu.getEmail(), usu.getSenha());
 

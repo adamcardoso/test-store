@@ -7,7 +7,7 @@ import org.teststore.data.factory.seleniumfactory.SeleniumFactory;
 public class BaseTest {
     @Before
     public void abrirNavegador(){
-        SeleniumFactory.initBrowser("http://teststore.automationtesting.co.uk/login");
+        SeleniumFactory.initBrowser("http://teststore.automationtesting.co.uk");
     }
 
     @After
