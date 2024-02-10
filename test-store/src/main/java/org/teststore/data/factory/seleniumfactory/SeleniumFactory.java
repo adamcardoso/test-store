@@ -25,10 +25,9 @@ public class SeleniumFactory {
     public static void tearDown() {
         if (Objects.nonNull(driver)) {
             driver.quit();
+        }else {
+            killChromeDriver();
         }
-
-        // Matar processos do chromedriver
-        killChromeDriver();
     }
 
     private static void killChromeDriver() {

@@ -8,7 +8,7 @@ public class AuthenticationPage extends BasePage {
     private static final By campoEmail = By.cssSelector("section input[name='email']");
     private static final By campoSenha = By.cssSelector("input[name='password']");
     private static final By btnAcessar = By.cssSelector("button#submit-login");
-    private static final By msgEmailIncorreto = By.cssSelector(".alert.alert-danger");
+    private static final By msgEmailNaoCadastrado = By.cssSelector(".alert.alert-danger");
 
     public String verificarMensagemNaPaginaDeLogin() {
         return lerTexto(msgTelaLogin);
@@ -22,11 +22,11 @@ public class AuthenticationPage extends BasePage {
         return lerTexto(msgTelaLogin);
     }
 
-    public String loginEmailIncorreto(String email, String senha) {
+    public String loginEmailNaoCadastrado(String email, String senha) {
         preencherInput(campoEmail, email);
         preencherInput(campoSenha, senha);
         clicar(btnAcessar);
 
-        return lerTexto(msgEmailIncorreto);
+        return lerTexto(msgEmailNaoCadastrado);
     }
 }
