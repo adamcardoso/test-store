@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Feb 10 02:03:16 BRT 2024","Sat Feb 10 02:03:20 BRT 2024","4479","","org.teststore.test.RegisterTest","","org.teststore.test.RegisterTest","validarCadastroDadosValidos","validarCadastroDadosValidos","Validar cadastro com dados válidos"
+"passed","Sat Feb 10 02:02:57 BRT 2024","Sat Feb 10 02:03:03 BRT 2024","5260","","org.teststore.test.LoginTest","","org.teststore.test.LoginTest","validarLoginComDadosValidos","validarLoginComDadosValidos","Validar login com dados válidos"
+"passed","Sat Feb 10 02:03:03 BRT 2024","Sat Feb 10 02:03:05 BRT 2024","2465","","org.teststore.test.LoginTest","","org.teststore.test.LoginTest","invalidarLoginComEmailNaoCadastrado","invalidarLoginComEmailNaoCadastrado","Invalidar login com email não cadastrado"
+"passed","Sat Feb 10 02:03:12 BRT 2024","Sat Feb 10 02:03:16 BRT 2024","3503","","org.teststore.test.RegisterTest","","org.teststore.test.RegisterTest","invalidarCadastroDadosInvalidos","invalidarCadastroDadosInvalidos","Invalidar cadastro com dados inválidos"

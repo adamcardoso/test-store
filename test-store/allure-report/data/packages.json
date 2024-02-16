@@ -1,0 +1,61 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "org.teststore.test",
+    "children" : [ {
+      "name" : "validarLoginComDadosValidos",
+      "uid" : "f0f3dce6eaf849c2",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707541377961,
+        "stop" : 1707541383221,
+        "duration" : 5260
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invalidarLoginComEmailNaoCadastrado",
+      "uid" : "a83dab6d353e6e1b",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707541383300,
+        "stop" : 1707541385765,
+        "duration" : 2465
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "invalidarCadastroDadosInvalidos",
+      "uid" : "46de5930c4ab4803",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707541392995,
+        "stop" : 1707541396498,
+        "duration" : 3503
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "validarCadastroDadosValidos",
+      "uid" : "e97df41232651134",
+      "parentUid" : "5b63db7e47a9ff7d9701b0be77993e36",
+      "status" : "passed",
+      "time" : {
+        "start" : 1707541396500,
+        "stop" : 1707541400979,
+        "duration" : 4479
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "org.teststore.test"
+  } ]
+}

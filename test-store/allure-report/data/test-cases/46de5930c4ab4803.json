@@ -1,0 +1,65 @@
+{
+  "uid" : "46de5930c4ab4803",
+  "name" : "invalidarCadastroDadosInvalidos",
+  "fullName" : "org.teststore.test.RegisterTest.invalidarCadastroDadosInvalidos",
+  "historyId" : "f9a6a581f2ec284f43b8f9e87bc35867",
+  "time" : {
+    "start" : 1707541392995,
+    "stop" : 1707541396498,
+    "duration" : 3503
+  },
+  "description" : "Invalidar cadastro com dados inválidos",
+  "descriptionHtml" : "<p>Invalidar cadastro com dados inválidos</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.teststore.test"
+  }, {
+    "name" : "testClass",
+    "value" : "org.teststore.test.RegisterTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "invalidarCadastroDadosInvalidos"
+  }, {
+    "name" : "suite",
+    "value" : "org.teststore.test.RegisterTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9OJ40BU"
+  }, {
+    "name" : "thread",
+    "value" : "10576@DESKTOP-9OJ40BU.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Cadastro de usuário"
+  }, {
+    "name" : "owner",
+    "value" : "adamcardoso"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "adamcardoso",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "46de5930c4ab4803.json",
+  "parameterValues" : [ ]
+}

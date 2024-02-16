@@ -1,0 +1,6 @@
+{
+  "name": "GitHub Actions",
+  "buildName": "${{ github.run_id }}",
+  "os": "${{ runner.os }}",
+  "browser": "Chrome"
+}

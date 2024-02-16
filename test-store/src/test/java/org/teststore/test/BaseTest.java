@@ -1,29 +1,26 @@
 package org.teststore.test;
 
+import io.cucumber.java.pt.Dado;
+import io.cucumber.java.pt.E;
 import io.qameta.allure.*;
 
-import org.junit.After;
 import org.junit.AfterClass;
-import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.runner.RunWith;
-import org.junit.runners.Suite;
-import org.teststore.data.factory.seleniumfactory.SeleniumFactory;
+import org.teststore.data.factory.seleniumfactory.SeleniumService;
 
 public class BaseTest {
-    private static final String url = "http://teststore.automationtesting.co.uk";
 
     @BeforeClass
     @Description("Abrir navegador antes da execução da suíte de testes")
-    @Severity(SeverityLevel.NORMAL)
+    @Dado("^que acesso a  url do sistema automation exercise$")
     public static void setUp() {
-        SeleniumFactory.abrirNavegador(url);
+        SeleniumService.abrirNavegador();
     }
 
     @AfterClass
     @Description("Fechar navegador após a execução da suíte de testes")
-    @Severity(SeverityLevel.NORMAL)
+    @E("^finalizo o teste$")
     public static void tearDown() {
-        SeleniumFactory.tearDown();
+        SeleniumService.tearDown();
     }
 }

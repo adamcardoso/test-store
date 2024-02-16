@@ -1,0 +1,91 @@
+{
+  "uid" : "a83dab6d353e6e1b",
+  "name" : "invalidarLoginComEmailNaoCadastrado",
+  "fullName" : "org.teststore.test.LoginTest.invalidarLoginComEmailNaoCadastrado",
+  "historyId" : "debd907dc7b5f6b98a3b91095539a369",
+  "time" : {
+    "start" : 1707541383300,
+    "stop" : 1707541385765,
+    "duration" : 2465
+  },
+  "description" : "Invalidar login com email não cadastrado",
+  "descriptionHtml" : "<p>Invalidar login com email não cadastrado</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "Invalidar login com email não cadastrado",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Executando login com email não cadastrado",
+      "time" : {
+        "start" : 1707541383300,
+        "stop" : 1707541385765,
+        "duration" : 2465
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 0,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "org.teststore.test"
+  }, {
+    "name" : "testClass",
+    "value" : "org.teststore.test.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "invalidarLoginComEmailNaoCadastrado"
+  }, {
+    "name" : "suite",
+    "value" : "org.teststore.test.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-9OJ40BU"
+  }, {
+    "name" : "thread",
+    "value" : "10576@DESKTOP-9OJ40BU.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "Autenticação de usuário"
+  }, {
+    "name" : "owner",
+    "value" : "adamcardoso"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "adamcardoso",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a83dab6d353e6e1b.json",
+  "parameterValues" : [ ]
+}
