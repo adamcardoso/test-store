@@ -1,12 +1,13 @@
-package org.teststore.page;
+package org.teststore.page.register;
 
 import org.openqa.selenium.By;
 import org.teststore.data.dto.RegisterDTO;
+import org.teststore.page.BasePage;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class RegisterPage extends BasePage{
+public class RegisterPage extends BasePage {
     private static final By btnCadastrar = By.cssSelector("[data-link-action='display-register-form']");
     private static final By btnSave = By.cssSelector("#customer-form > footer > button");
     private static final By msgTelaLogin = By.cssSelector("#main > header > h1");
@@ -19,16 +20,11 @@ public class RegisterPage extends BasePage{
     private static final By btnRegisterForOffers = By.cssSelector("input[name='optin']");
     private static final By btnRegisterForNewsLetters = By.cssSelector("input[name='newsletter']");
     private static final By btnTermsAndConditions = By.cssSelector("input[name='psgdpr']");
-    private static final By msgSenhaDeveTerMaisQueCincoCampos = By.cssSelector("input[name='password'][title='At least 5 characters long']");
     public static final By btnTituloMr = By.cssSelector("label.radio-inline:nth-child(1) > span.custom-radio > input[name='id_gender']");
     public static final By btnTituloMrs = By.cssSelector("label.radio-inline:nth-child(2) > span.custom-radio > input[name='id_gender']");
 
     public String verificarMensagemNaPaginaDeLogin() {
         return lerTexto(msgTelaLogin);
-    }
-
-    public String verificarMensagemDeSenhaMenorQueCincoCampos() {
-        return lerTexto(msgSenhaDeveTerMaisQueCincoCampos);
     }
 
     public String verificarMensagemNaPaginaDeCadastro() {
@@ -68,5 +64,4 @@ public class RegisterPage extends BasePage{
 
         clicar(btnSave);
     }
-
 }

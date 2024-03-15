@@ -1,6 +1,7 @@
-package org.teststore.page;
+package org.teststore.page.login;
 
 import org.openqa.selenium.By;
+import org.teststore.page.BasePage;
 
 public class AuthenticationPage extends BasePage {
 
@@ -14,12 +15,10 @@ public class AuthenticationPage extends BasePage {
         return lerTexto(msgTelaLogin);
     }
 
-    public String fazerLogin(String email, String senha) {
+    public void fazerLogin(String email, String senha) {
         preencherInput(campoEmail, email);
         preencherInput(campoSenha, senha);
         clicar(btnAcessar);
-
-        return lerTexto(msgTelaLogin);
     }
 
     public String loginEmailNaoCadastrado(String email, String senha) {

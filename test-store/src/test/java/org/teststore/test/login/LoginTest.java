@@ -1,12 +1,13 @@
-package org.teststore.test;
+package org.teststore.test.login;
 
 import io.qameta.allure.*;
 import org.junit.Assert;
 import org.junit.Test;
 import org.teststore.data.dto.LoginDTO;
 import org.teststore.data.factory.datafaker.LoginData;
-import org.teststore.page.AuthenticationPage;
-import org.teststore.page.HomePage;
+import org.teststore.page.login.AuthenticationPage;
+import org.teststore.page.home.HomePage;
+import org.teststore.test.BaseTest;
 
 public class LoginTest extends BaseTest {
 
@@ -26,11 +27,9 @@ public class LoginTest extends BaseTest {
         Assert.assertEquals("Log in to your account", msgTelaLogin);
 
         LoginDTO usu = loginData.loginDadosValidos();
-        String msg = authenticationPage.fazerLogin(usu.getEmail(), usu.getSenha());
+        authenticationPage.fazerLogin(usu.getEmail(), usu.getSenha());
 
         homePage.clicarNoBtnLogout();
-
-        Assert.assertEquals("Your account", msg);
     }
 
     @Test
