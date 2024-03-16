@@ -17,6 +17,6 @@ public class BaseTest {
     @AfterClass
     @Description("Fechar navegador após a execução da suíte de testes")
     public static void tearDown() {
-        SeleniumService.tearDown();
+        //SeleniumService.tearDown();
     }
 }

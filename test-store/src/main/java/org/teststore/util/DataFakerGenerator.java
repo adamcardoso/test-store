@@ -31,4 +31,8 @@ public class DataFakerGenerator {
     public LocalDate nascimento() {
         return faker.date().birthday().toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
     }
+
+    public String nomeListaDeDesejos(){
+        return faker.commerce().productName();
+    }
 }
