@@ -1,17 +1,22 @@
 package org.teststore.test;
 
-import org.junit.After;
-import org.junit.Before;
-import org.teststore.data.factory.seleniumfactory.SeleniumFactory;
+import io.qameta.allure.*;
+
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
+import org.teststore.data.factory.seleniumfactory.SeleniumService;
 
 public class BaseTest {
-    @Before
-    public void abrirNavegador(){
-        SeleniumFactory.initBrowser("http://teststore.automationtesting.co.uk/login");
+
+    @BeforeClass
+    @Description("Abrir navegador antes da execução da suíte de testes")
+    public static void setUp() {
+        SeleniumService.abrirNavegador();
     }
 
-    @After
-    public void fecharNavegador(){
-        SeleniumFactory.tearDown();
+    @AfterClass
+    @Description("Fechar navegador após a execução da suíte de testes")
+    public static void tearDown() {
+        //SeleniumService.tearDown();
     }
 }

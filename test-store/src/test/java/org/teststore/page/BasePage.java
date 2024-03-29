@@ -1,6 +1,7 @@
 package org.teststore.page;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.teststore.data.factory.seleniumfactory.Elements;
 
 public class BasePage extends Elements {
@@ -24,5 +25,11 @@ public class BasePage extends Elements {
         esperarElemento(by);
 
         element(by).sendKeys("\t");
+    }
+
+    protected static void selecionarRadioBtn(By by) {
+        esperarElemento(by);
+        WebElement radioButton = element(by);
+        radioButton.click();
     }
 }

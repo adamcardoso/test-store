@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-public class Elements extends SeleniumFactory{
+public class Elements extends SeleniumService {
 
     // método para pegar um elemento
     public static WebElement element(By by){
